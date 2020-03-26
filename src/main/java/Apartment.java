@@ -2,7 +2,7 @@ import lombok.Data;
 import lombok.ToString;
 
 @Data
-public class Apartaments {
+public class Apartment extends Building{
 
     private String city;
 
