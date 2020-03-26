@@ -27,11 +27,18 @@ public class Main {
 
         for (Apartaments apartaments : apartamentsList) {
             System.out.println(apartaments);
-            System.out.println("Całkowita cena mieszkania to:" + apartaments.getFullPrice()+"\n");
-        }
+            System.out.println("Całkowita cena mieszkania to:" + apartaments.getFullPrice() + "\n");
 
-        double średniaCena = (apartament1.getFullPrice()+apartament2.getFullPrice()+apartament3.getFullPrice())/apartamentsList.size();
-        System.out.format("średnia cena wynosi: %.2f" , średniaCena);
+        }
+        double sum = 0;
+        for (Apartaments a : apartamentsList) {
+            sum += a.getFullPrice();
+        }
+        System.out.println("średnia cena mieszkań to:" + sum / apartamentsList.size());
+
 
     }
 }
+
+
+
