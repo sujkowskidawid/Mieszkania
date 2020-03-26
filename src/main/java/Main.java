@@ -34,7 +34,7 @@ public class Main {
         for (Apartaments a : apartamentsList) {
             sum += a.getFullPrice();
         }
-        System.out.println("średnia cena mieszkań to:" + sum / apartamentsList.size());
+        System.out.format("średnia cena mieszkań to: %.2f", sum / apartamentsList.size());
 
 
     }
